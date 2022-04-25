@@ -1,5 +1,5 @@
-#ifndef _ADC_HELPER_H_
-#define _ADC_HELPER_H_ 1
+#ifndef _SPSE_STM8_H_
+#define _SPSE_STM8_H_ 1
 
 #ifndef F_CPU
 #warning F_CPU is not defined!
@@ -9,7 +9,7 @@
 #include "delay.h"
 
 #define ADC_TIMEOUT 1000
-#define ADC_TSTAB 7 // ƒças pro stabilizaci ADC po zapnut√≠ (7 us)
+#define ADC_TSTAB 7 // Ëas pro stabilizaci ADC po zapnutÌ (7 us)
 
 #ifdef STM8S208
 uint16_t ADC_get(ADC2_Channel_TypeDef ADC2_Channel); // perform conversion on selected channel (ADC must be enabled prior calling that function)
@@ -26,5 +26,5 @@ void ADC1_Startup_Wait(void);
 #endif
 
 
-#endif
 
+#endif
